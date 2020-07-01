@@ -1,0 +1,8 @@
+# Scrapy Cloud configuration file
+projects:
+  default: 460717
+
+requirements:
+  file: requirements.txt
+
+stack: scrapy:2.1
