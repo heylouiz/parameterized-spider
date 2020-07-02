@@ -1,7 +1,7 @@
-BOT_NAME = 'parametrized_spider'
+BOT_NAME = 'parameterized_spider'
 
-SPIDER_MODULES = ['parametrized_spider.spiders']
-NEWSPIDER_MODULE = 'parametrized_spider.spiders'
+SPIDER_MODULES = ['parameterized_spider.spiders']
+NEWSPIDER_MODULE = 'parameterized_spider.spiders'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -10,5 +10,5 @@ ROBOTSTXT_OBEY = True
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
 EXTENSIONS = {
     'scrapy.extensions.corestats.CoreStats': None,
-    'parametrized_spider.extensions.CustomCoreStats': 1,
+    'parameterized_spider.extensions.CustomCoreStats': 1,
 }
