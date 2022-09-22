@@ -16,6 +16,25 @@ This project has a spider that gives the user a way to modify some parts of the 
 For example, if you have a script that checks for jobs that did not extract items but don't want to modify your spiders to make them fail, you could setup this project to be monitored and parameterize the spider to behave like it extracted 0 items.
 
 
+## Setup and run
+
+You can run this project on your machine using Python (preferably in a virtualenv) or Docker.
+
+### Python
+
+```
+python -m virtualenv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+scrapy crawl parameterized
+```
+
+### Docker (compose)
+
+```
+docker-compose run scrapy scrapy crawl parameterized
+```
+
 ## Supported parameters
 
 The parameterization makes use of [Spider arguments](https://docs.scrapy.org/en/latest/topics/spiders.html#spider-arguments) to override Stats information.
